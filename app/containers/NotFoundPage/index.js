@@ -11,6 +11,7 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import Game from 'components/game';
 
 import messages from './messages';
 
@@ -18,7 +19,8 @@ export default class NotFound extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <h1>
-        <FormattedMessage {...messages.header} />
+        {/*<FormattedMessage {...messages.header} />*/}
+        {<Game />}
       </h1>
     );
   }
