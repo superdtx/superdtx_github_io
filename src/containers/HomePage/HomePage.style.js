@@ -24,6 +24,7 @@ export const Video = styled.video`
     min-width: 100%;
     min-height: 100%;
     display: block;
+    margin: 0 auto;
 
     z-index: 1;
 `;

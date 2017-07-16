@@ -11,7 +11,6 @@ export const NavigationContainer = styled.div`
 `;
 
 export const MainMenu = styled.div`
-	margin: auto;
 	width: 1200px;
 `;
 
