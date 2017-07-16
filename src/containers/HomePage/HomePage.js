@@ -19,7 +19,7 @@ export default class HomePage extends Component {
 	render() {
 		return (
 			<Container>
-				<h1>Hello World!!</h1>
+				<h1>Hello World!!!!</h1>
 				<p>{this.state.data}</p>
 				<button onClick={this.increment.bind(this)}>Increment</button>
 				<Video autoPlay loop>
