@@ -9,19 +9,19 @@ export default class Navigation extends React.PureComponent { // eslint-disable-
 					<Logo />
 					<UL>
 						<NavItem>
-							<NavItemLink href="#">HOME</NavItemLink>
+							<NavItemLink href="/">HOME</NavItemLink>
 						</NavItem>
 						<NavItem>
-							<NavItemLink href="#">PHOTOGRAPH</NavItemLink>
+							<NavItemLink href="/PHOTOGRAPH">PHOTOGRAPH</NavItemLink>
 						</NavItem>
 						<NavItem>
-							<NavItemLink href="#">STEPS</NavItemLink>
+							<NavItemLink href="/STACK">STACK</NavItemLink>
 						</NavItem>
 						<NavItem>
-							<NavItemLink href="#">STACK</NavItemLink>
+							<NavItemLink href="/EXPERIMENT">EXPERIMENT</NavItemLink>
 						</NavItem>
 						<NavItem>
-							<NavItemLink href="#">ABOUT</NavItemLink>
+							<NavItemLink href="/ABOUT">ABOUT</NavItemLink>
 						</NavItem>
 					</UL>
 				</MainMenu>

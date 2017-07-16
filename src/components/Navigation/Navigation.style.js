@@ -38,4 +38,8 @@ export const NavItemLink = styled.a`
     color: #333;
     font-size: 18px;
     display: block;
+
+    &:hover {
+	    color: #00bbee;
+	}
 `;
