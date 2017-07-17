@@ -14,13 +14,7 @@ export const MainMenu = styled.div`
     margin: 30px 0 0 30px;
 `;
 
-export const UL = styled.ul`
-	display: block;
-	list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+export const OPTIONSUL = styled.ul`
     -webkit-padding-start: 0px;
 `;
 
@@ -49,4 +43,25 @@ export const NavItemLink = styled.a`
     &:hover {
 	    color: #a2834e;
 	}
+`;
+
+export const SOCIALBOX = styled.div`
+	position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px 30px 0 10px;
+    box-sizing: border-box;
+`;
+
+export const SOCIALUL = styled.ul`
+	margin: 0;
+    padding: 0;
+    text-align: right;
+`;
+
+export const SocItem = styled.li`
+	list-style-type: none;
+    display: inline-block;
+    text-align: right;
+    margin: 0 0 14px 7px;
 `;

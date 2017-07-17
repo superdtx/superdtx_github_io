@@ -10,7 +10,7 @@ import App from './containers/App/App';
 export default (
 	<Router>
 		<App>
-			<Route path='/' component={HomePage}></Route>
+			<Route exact path='/' component={HomePage}></Route>
 			<Route exact path='/Photograph' component={Photograph}></Route>
 			<Route exact path='/Stack' component={Stack}></Route>
 			<Route exact path='/Experiment' component={Experiment}></Route>
