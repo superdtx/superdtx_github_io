@@ -49,7 +49,7 @@ export const SOCIALBOX = styled.div`
 	position: absolute;
     right: 0;
     top: 0;
-    padding: 30px 30px 0 10px;
+    padding: 0px 30px 0 10px;
     box-sizing: border-box;
 `;
 
@@ -63,5 +63,14 @@ export const SocItem = styled.li`
 	list-style-type: none;
     display: inline-block;
     text-align: right;
-    margin: 0 0 14px 7px;
+    margin: 0 7px 14px 7px;
+    height: 32px;
+    width: 32px;
+`;
+
+export const SocItemLink = styled.a`
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+    vertical-align: middle;
 `;

@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavigationContainer, MainMenu, NavItem, NavItemLink, 
-	OPTIONSUL, SOCIALBOX, SOCIALUL, SocItem } from './Navigation.style';
+	OPTIONSUL, SOCIALBOX, SOCIALUL, SocItem, SocItemLink } from './Navigation.style';
+import githubr from '../../assets/socialIcon/githubr.svg';
+import linkedinr from '../../assets/socialIcon/linkedinr.svg';
 
 export default class Navigation extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 	
-
-
 	render() {
 		return (			
 			<NavigationContainer>
@@ -31,14 +31,14 @@ export default class Navigation extends React.PureComponent { // eslint-disable-
 				<SOCIALBOX>
 					<SOCIALUL>
 						<SocItem>
-							{/*<a href="https://github.com/superdtx">
-								<object type="image/svg+xml" data="../../assets/socialIcon/github_logo_r.svg"></object>
-							</a>*/}
+							<SocItemLink href="https://github.com/superdtx">
+								<object type="image/svg+xml" data={githubr}>Your browser does not support SVGs</object>	
+							</SocItemLink>
 						</SocItem>
 						<SocItem>
-							<a href="https://www.linkedin.com/in/tanxind">
-								<img src="assets/socialIcon/linkedin_logo_r.svg"/>
-							</a>
+							<SocItemLink href="https://www.linkedin.com/in/tanxind">
+								<object type="image/svg+xml" data={linkedinr}>Your browser does not support SVGs</object>	
+							</SocItemLink>
 						</SocItem>
 					</SOCIALUL>
 				</SOCIALBOX>

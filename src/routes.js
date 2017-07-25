@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, Redirect } from 'react-router';
 import HomePage from './containers/HomePage/HomePage';
 import Photograph from './containers/Photograph/Photograph';
 import About from './containers/About/About';
@@ -10,11 +11,14 @@ import App from './containers/App/App';
 export default (
 	<Router>
 		<App>
-			<Route exact path='/' component={HomePage}></Route>
-			<Route exact path='/Photograph' component={Photograph}></Route>
-			<Route exact path='/Stack' component={Stack}></Route>
-			<Route exact path='/Experiment' component={Experiment}></Route>
-			<Route exact path='/About' component={About}></Route>
+			<Switch>
+				<Route exact path="/" component={HomePage}></Route>
+				<Route path="/Photograph" component={Photograph}></Route>
+				<Route path="/Stack" component={Stack}></Route>
+				<Route path="/Experiment" component={Experiment}></Route>
+				<Route path="/About" component={About}></Route>
+				<Redirect path="/*" to="/"></Redirect>
+			</Switch>
 		</App>
 	</Router>
 );
