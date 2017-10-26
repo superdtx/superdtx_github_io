@@ -8,7 +8,6 @@ injectGlobal `
 	    font-family: "Source Sans Pro",Tahoma,Arial,sans-serif;
 	    font-size: 16px;
 	    line-height: 1.4em;
-	    font-family: adelle-web;
 	    font-style: normal;
 	    font-weight: 400;
 	    font-size: 14px;
@@ -34,5 +33,4 @@ injectGlobal `
 	    display: list-item;
 	    text-align: -webkit-match-parent;
 	}
-
 `

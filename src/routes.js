@@ -11,6 +11,7 @@ import App from './containers/App/App';
 export default (
 	<Router>
 		<App>
+    <HomePage />
 			<Switch>
 				<Route exact path="/" component={HomePage}></Route>
 				<Route path="/Photograph" component={Photograph}></Route>

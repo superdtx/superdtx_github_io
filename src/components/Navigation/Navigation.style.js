@@ -1,13 +1,22 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const NavigationContainer = styled.header`
-	display: block;
-	z-index: 1000;
-	position: relative
+export const SubMenu = styled.ul`
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 5px 5px 5px 15px;
+    color: #f7f6f5;
+    background-color: rgba(51,53,56,.8);
+    display: ${props => props.status || "none"};
+`;
+
+export const NavigationContainer = styled.nav`
+    display: block;
+    z-index: 1000;
+    position: relative;
 `;
 
 export const MainMenu = styled.div`
-    width: calc(50% - 30%);
+    width: 12%;
     top: auto;
     left: auto;
     font-size: 12px;
@@ -19,9 +28,7 @@ export const OPTIONSUL = styled.ul`
 `;
 
 export const NavItem = styled.li`
-
-	margin: .75em .5em .75em 0;
-	font-family: "Lato";
+    margin: 0.75em 0.5em 0.75em 0;
     line-height: 1.25em;
     text-transform: uppercase;
     text-decoration: none;
@@ -29,24 +36,24 @@ export const NavItem = styled.li`
     font-weight: 400;
     font-style: normal;
     list-style-type: none;
-	
-	display: list-item;
+
+    display: list-item;
     text-align: -webkit-match-parent;
+    cursor: pointer;
 `;
 
 export const NavItemLink = styled.a`
-	text-decoration: none;
+    text-decoration: none;
     color: #f7f6f5;
-    cursor: auto;
     display: block;
 
     &:hover {
-	    color: #a2834e;
-	}
+        color: #a2834e;
+    }
 `;
 
 export const SOCIALBOX = styled.div`
-	position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
     padding: 0px 30px 0 10px;
@@ -54,13 +61,13 @@ export const SOCIALBOX = styled.div`
 `;
 
 export const SOCIALUL = styled.ul`
-	margin: 0;
+    margin: 0;
     padding: 0;
     text-align: right;
 `;
 
 export const SocItem = styled.li`
-	list-style-type: none;
+    list-style-type: none;
     display: inline-block;
     text-align: right;
     margin: 0 7px 14px 7px;
@@ -71,6 +78,6 @@ export const SocItem = styled.li`
 export const SocItemLink = styled.a`
     width: 100%;
     height: 100%;
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
 `;

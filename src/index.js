@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import routes from './routes';
-import { AppContainer } from 'react-hot-loader'
-
+import { AppContainer } from 'react-hot-loader';
+import './assets/fontawesome/css/font-awesome.min.css';
 import './theme/globalStyles';
 
 ReactDOM.render(
